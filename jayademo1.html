@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        div{
+            background-color: black;
+            width: 100px;
+            height: 100px;
+            margin-top: 200px;
+            margin-left: 200px;
+
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            border-radius: 5px;
+
+        
+        }
+
+        #but{
+            display: block;
+
+
+            margin-left: 200px;
+        }
+        .widthmax{
+            width: 400px;
+            height: 400px;
+            background-color:crimson;
+
+            flex-direction: column;
+            /* color: black; */
+        }
+        input, button {
+            padding: 5px 10px;
+           margin: 5px;
+        }
+    </style>
+</head>
+<body>
+   
+        <!-- css and js -->
+        <div id="box"></div>
+        <button id="but" onclick="change()">change box size color</button>
+           
+            <script>
+                //css and js
+                var box=document.getElementById("box")
+                function change()
+                {
+                    box.setAttribute("class","widthmax");
+                
+                // <!-- html and JS -->
+                    box.innerHTML = `
+                        <h1>Guess the number</h1>
+                        <input id="guessnumber" />
+                        <button onclick="check()">check</button>
+                        <p id="result">you are Right/Worng!</p>
+                        <p id="score">Score:10</p>
+                        `;
+                }
+                //html and js
+                //selecting input box, paragraph
+                
+                var randomNumber = Math.floor(Math.random()*10)+1;
+                var totalscore=10;
+        
+                function check()
+                {
+                    var gussnumber = document.getElementById("guessnumber");
+                    var result = document.getElementById("result");
+                    var score =  document.getElementById("score");
+                    var enterednumber = gussnumber.value;
+                    if(randomNumber==enterednumber)
+                    {
+                        // console.log("Right")
+                        result.textContent = "Right you won!!";
+                        // alter("YOU WON......")
+                    }
+        
+                    else{
+                        totalscore = totalscore-1;
+                        score.textContent="score:"+totalscore;
+                        result.textContent="Worng";
+                    }
+                }
+        
+            </script>
+    
+</body>
+</html>
