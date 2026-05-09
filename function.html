@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./shooping.css">
+    <style>
+        .signup{
+    background-color: rgb(239, 228, 205);
+    display: flex;
+    /* position: fixed;  */
+    width: 100%;
+}
+p{
+    margin-top: 10px;  
+}
+h1{
+    margin-left: 50px;
+}
+        #tab{
+            position: absolute;
+            margin-top: 4px;
+           width: 200px;
+           height: 380px;
+           margin-left: 20px;
+           border: 1px solid black;
+           background-color: antiquewhite;
+
+        }
+        a{
+            text-decoration: none;
+            line-height: -0.1;
+        }
+
+        #image1{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            border-spacing:20px ;
+            border-collapse: separate;
+            grid-template-columns: auto;
+            gap: 50px;
+            /* border: 1px solid black   */
+        }
+        
+        #image2{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            border-spacing:20px ;
+            border-collapse: separate;
+            grid-template-columns: auto;
+            gap: 50px;
+            /* border: 1px solid black   */
+        }
+
+        #image3{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            border-spacing:20px ;
+            border-collapse: separate;
+            grid-template-columns: auto;
+            gap: 50px;
+            /* border: 1px solid black   */
+        }
+
+        #ima1{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: 300px;
+            padding: 10px;
+        }
+        p,h2{
+            margin-left: 20px;
+            margin-top: 20px;
+            margin-bottom: 0px;
+        }
+        h6,small{
+            margin-left: 20px;
+           margin-bottom: 10px;
+            border-radius: 20px;
+            
+        }
+        h6{
+            height: 20px;
+            width: 50px;
+            text-align: center;
+            background-color: green;
+
+        }
+        #ima2{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: -15px;
+            padding: 10px;
+        }
+        #ima3{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: -15px;
+            padding: 10px;
+        }
+
+        #ima4{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: -15px;
+            padding: 10px;
+        }
+
+        #ima5{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: -15px;
+            padding: 10px;
+        }
+
+        #ima6{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: 300px;
+            padding: 10px;
+        }
+
+        #ima7{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: -15px;
+            padding: 10px;
+        }
+
+        #ima8{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: -15px;
+            padding: 10px;
+        }
+
+        #ima9{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: -15px;
+            padding: 10px;
+        }
+
+        #ima10{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: -15px;
+            padding: 10px;
+        }
+
+        #ima11{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: 300px;
+            padding: 10px;
+        }
+
+        #ima12{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: -20px;
+            padding: 10px;
+        }
+
+        #ima13{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: -25px;
+            padding: 10px;
+        }
+
+        #ima14{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: -15px;
+            padding: 10px;
+        }
+
+        #ima15{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: -15px;
+            padding: 10px;
+        }
+
+        #views{
+            margin-top: 30px;
+        }
+        #offer{
+            margin-left: 90px;
+            margin-top:-35px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup">
+        <h1>Easy Shopping</h1> 
+        <input type="text" placeholder="search your products" style=" width: 400px;
+        height: 30px;
+        margin-left:100px;
+        margin-top: 30px;">
+        <a href="./myntra.html" style="margin-left: 400px;"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="" style="margin-left:40px;"><i class="fa-solid fa-magnifying-glass"></i>
+            profile</a>
+        <a href="" style="margin-left: 40px;"><i class="fa-solid fa-cart-shopping"></i>cart</a>
+        <a href="./sign.html" style="margin-left: 40px;"><i class="fa-solid fa-user-plus"></i>
+        signup</a>
+    </div>
+    <div id="parent">
+        <ul>
+            <a href="./Men.html">Men </a>
+            <a href="./Women.html">Women </a>
+            <a href="./kids.html">Kids </a>
+            <a href="./home.html">Home </a>
+            <a href="./westen.html">WestenWare </a>
+            <a href="./speaker.html">Speaker</a>
+            <a href="./jewellary.html">Jewellary </a>
+            <a href="./shoes.html">Footware </a>
+            <a href="./beauty.html">BeautyProduct</a>
+            <a href="./statunary.html">Statunarys </a>
+            <a href="./kitchen.html">kitchen</a>
+            <a href="./jeens.html">JeensAndTop  </a>
+            <a href="./function.html">FunctionWare </a>
+            <a href="./toys.html">Toys </a>
+            <a href="./bags.html">Bags </a>
+            
+        </ul>
+    </div>
+    <div id="image">
+        <div id="img1">
+        <img src="https://www.bing.com/th/id/OIP.mAB9hrZ75ikOJRyPPpFpxAHaE7?w=290&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="">
+        </div>
+        <div id="img2">
+        <img src="https://th.bing.com/th/id/OIP.oGrCa73IPEA9s-5ld63ShwHaE8?w=295&h=197&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="" width="380px" height="280px">
+        </div>
+        <div id="img3">
+        <img src="https://th.bing.com/th/id/OIP.QJFbMYl1nVnfw8abjrC6AgHaDu?w=346&h=176&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" width="380px" height="280px">
+        </div>
+        <div id="img4">
+        <img src="https://th.bing.com/th/id/OIP.zQ6gcM--Ikj7Hzx8DV7_JgHaDZ?w=339&h=160&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" width="370px" height="280px">
+        </div>
+    </div>
+    <div id="tab">
+        <h3>category</h3>
+        <input type="checkbox"><a href="./Men.html">Men </a> <br>
+        <input type="checkbox"><a href="./Women.html">Women </a> <br>
+        <input type="checkbox"><a href="./kids.html">Kids </a> <br>
+        <input type="checkbox"><a href="./home.html">Home </a> <br>
+        <input type="checkbox"><a href="./westen.html">WestenWare </a> <br>
+        <input type="checkbox"><a href="./electronic.html">Electronic </a> <br>
+        <input type="checkbox"><a href="./speaker.html">Speaker</a> <br>
+        <input type="checkbox"><a href="./jewellary.html">Jewellary </a> <br>
+        <input type="checkbox"><a href="./shoes.html">Footware </a> <br>
+        <input type="checkbox"><a href="./beauty.html">BeautyProduct</a> <br>
+        <input type="checkbox"><a href="./statunary.html">Statunarys </a> <br>
+        <input type="checkbox"><a href="./kitchen.html">kitchen</a> <br>
+        <input type="checkbox"><a href="./jeens.html">JeensAndTop</a> <br>
+        <input type="checkbox"><a href="./function.html">FunctionWare </a> <br>
+        <input type="checkbox"><a href="./toys.html">Toys </a> <br>
+        <input type="checkbox"><a href="./bags.html">Bags </a> <br>
+    </div>
+
+    <div id="image1">
+        <div id="ima1">
+            <img src="https://images.meesho.com/images/products/427595024/mxf3t_512.avif?width=360" alt="" width="190px" height="190px">
+           <p>Aishani Superior Sarees</p>
+           <h2>$353</h2>
+           <div style="display: flex;">
+            <h3 id="offer">(15% offer)</h3>
+            </div>
+           <small>free Delivery</small>
+           <div style="display: flex;">
+           <h6>4.0</h6>
+           <small id="views">views(7,042)</small>
+           </div>
+        </div>
+
+        <div id="ima2">
+            <img src="https://images.meesho.com/images/products/7951777/8f5ec_512.avif?width=360" width="190px" height="190px" alt="">
+            <p>kashvi Fashionable Sarees</p>
+           <h2>$246</h2>
+           <div style="display: flex;">
+            <h3 id="offer">(10% offer)</h3>
+            </div>
+           <small>free Delivery</small>
+           <div style="display: flex;">
+           <h6>4.0</h6> 
+           <small id="views">views(9,142)</small>
+           </div>
+        </div>
+
+        <div id="ima3">
+            <img src="https://images.meesho.com/images/products/28202474/21179_512.avif?width=360" alt="" width="190px" height="170px">
+            <p>Alinea Kanjeevaram Banarasi silk</p>
+           <h2>$291</h2>
+           <div style="display: flex;">
+            <h3 id="offer">(30% offer)</h3>
+            </div>
+           <small>free Delivery</small>
+           <div style="display: flex;">
+               <h6>3.7</h6> 
+               <small id="views">views(18,742)</small>
+            </div>
+        </div>
+
+            <div id="ima4">
+                <img src="https://images.meesho.com/images/products/212271228/3socv_512.avif?width=360"  width="190px" height="190px">
+                <p>light weight soft sarees</p>
+               <h2>$318</h2>
+               <div style="display: flex;">
+                <h3 id="offer">(25% offer)</h3>
+                </div>
+               <small>free Delivery</small>
+               <div style="display: flex;">
+                <h6>3.8</h6> 
+                <small id="views">views(23,321)</small>
+                </div>
+            </div>
+
+        <div id="ima5">
+            <img src="https://images.meesho.com/images/products/571732763/wsmgw_512.avif?width=360" alt=""width="200px" height="170px" >
+            <p>Aagyeyi Fashionable Sarees</p>
+           <h2>$552</h2>
+           <div style="display: flex;">
+            <h3 id="offer">(24% offer)</h3>
+            </div>
+           <small>free Delivery</small>
+           <div style="display: flex;">
+            <h6>4.0</h6> 
+            <small id="views">views(3,454)</small>
+            </div>
+        </div>
+    </div>
+    <div id="image2">
+        <div id="ima6">
+            <img src="https://images.meesho.com/images/products/232520096/azx0t_512.avif?width=360" alt="" width="190px" height="190px">
+            <p>Alisha Fabulous Sarees</p>
+            <h2>$273</h2>
+            <div style="display: flex;">
+                <h3 id="offer">(17% offer)</h3>
+            </div>
+            <small>free Delivery</small>
+            <div style="display: flex;">
+                <h6>4.0</h6> 
+                <small id="views">views(11,564)</small>
+            </div>
+        </div>
+
+        <div id="ima7">
+            <img src="https://images.meesho.com/images/products/501478641/8m07r_512.avif?width=360" alt="" width="190px" height="190px">
+            <p>Cutiiepie Stylish kids girl</p>
+            <h2>$733</h2>
+            <div style="display: flex;">
+                <h3 id="offer">(19% offer)</h3>
+            </div>
+            <small>free Delivery</small>
+            <div style="display: flex;">
+                <h6>3.7</h6> 
+                <small id="views">views(3,104)</small>
+            </div>
+        </div>
+
+        <div id="ima8">
+            <img src="https://images.meesho.com/images/products/530261334/il3pl_512.avif?width=360" alt="" width="185px" height="170px">
+            <p>Trending Kanjeevaram Silk Lehenga choli</p>
+            <h2>$610</h2>
+            <div style="display: flex;">
+                <h3 id="offer">(30% offer)</h3>
+            </div>
+            <small>free Delivery</small>
+            <div style="display: flex;">
+                <h6>3.6</h6> 
+                <small id="views">views(3,452)</small>
+            </div>
+        </div>
+
+        <div id="ima9">
+            <img src="https://images.meesho.com/images/products/505666458/fgjoe_512.avif?width=360" alt="" width="200px" height="190px">
+            <p>Charvi Superior Sarees</p>
+            <h2>$366</h2>
+            <div style="display: flex;">
+                <h3 id="offer">(19% offer)</h3>
+            </div>
+            <small>free Delivery</small>
+            <div style="display: flex;">
+                <h6>3.9</h6> 
+                <small id="views">views(2,724)</small>
+            </div>
+        </div>
+
+        <div id="ima10">
+            <img src="https://images.meesho.com/images/products/186456207/8t5cw_512.avif?width=360" alt="" width="200px" height="190px">
+            <p>kashvi Fabulous Sarees</p>
+            <h2>$324</h2>
+            <div style="display: flex;">
+                <h3 id="offer">(20% offer)</h3>
+            </div>
+            <small>free Delivery</small>
+            <div style="display: flex;">
+                <h6>4.1</h6> 
+                <small id="views">views(17,204)</small>
+            </div>
+        </div>
+    </div>
+    <div id="image3">
+        <div id="ima11">
+            <img src="https://images.meesho.com/images/products/479554443/3aukj_512.avif?width=512" alt="" width="190px" height="170px">
+            <p>Net Embriodered Semi-Stitched Lehenga</p>
+            <h2>$563</h2>
+            <div style="display: flex;">
+                <h3 id="offer">(30% offer)</h3>
+            </div>
+            <small>free Delivery</small>
+            <div style="display: flex;">
+                <h6>3.9</h6> 
+                <small id="views">views(1,435)</small>
+            </div>
+        </div>
+
+        <div id="ima12">
+            <img src="https://images.meesho.com/images/products/430881704/74edo_512.avif?width=512" alt="" width="190px" height="170px">
+            <p> Bliss Flair Wine Heavy Embroiderded dress</p>
+            <h2>$440</h2>
+            <div style="display: flex;">
+                <h3 id="offer">(16% offer)</h3>
+            </div>
+            <small>free Delivery</small>
+            <div style="display: flex;">
+                <h6>4.0</h6> 
+                <small id="views">views(2,029)</small>
+            </div>
+        </div>
+
+        <div id="ima13">
+            <img src="https://images.meesho.com/images/products/537231682/aouvc_512.avif?width=360" alt="" width="180px" height="190px">
+            <p>Aagyeyi Attractive Sarees</p>
+            <h2>$382</h2>
+            <div style="display: flex;">
+                <h3 id="offer">(16% offer)</h3>
+            </div>
+            <small>free Delivery</small>
+            <div style="display: flex;">
+                <h6>3.9</h6> 
+                <small id="views">views(1.036)</small>
+            </div>
+        </div>
+
+        <div id="ima14">
+            <img src="https://images.meesho.com/images/products/566672738/xbcx4_512.avif?width=360" alt="" width="190px" height="190px">
+            <p>Kurthi With Bottomware</p>
+            <h2>$244</h2>
+            <div style="display: flex;">
+                <h3 id="offer">(17% offer)</h3>
+            </div>
+            <small>free Delivery</small>
+            <div style="display: flex;">
+                <h6>3.6</h6> 
+                <small id="views">views(1,770)</small>
+            </div>
+        </div>
+
+        <div id="ima15">
+            <img src="https://images.meesho.com/images/products/423928958/fuqxu_512.avif?width=360" alt="" width="190px" height="170px">
+            <p>Banita Drishya women Kurti set</p>
+            <h2>$438</h2>
+            <div style="display: flex;">
+                <h3 id="offer">(35% offer)</h3>
+            </div>
+            <small>free Delivery</small>
+            <div style="display: flex;">
+                <h6>3.8</h6> 
+                <small id="views">views(6,201)</small>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

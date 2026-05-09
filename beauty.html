@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./shooping.css">
+    <style>
+        .signup{
+    background-color: rgb(239, 228, 205);
+    display: flex;
+    /* position: fixed;  */
+    width: 100%;
+}
+p{
+    margin-top: 10px;  
+}
+h1{
+    margin-left: 50px;
+}
+        #tab{
+            position: absolute;
+           margin-top: 4px;
+           width: 200px;
+           height: 380px;
+           margin-left: 20px;
+           border: 1px solid black;
+           background-color: antiquewhite;
+
+        }
+        a{
+            text-decoration: none;
+            line-height: -0.1;
+        }
+
+        #image1{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            border-spacing:20px ;
+            border-collapse: separate;
+            grid-template-columns: auto;
+            gap: 50px;
+            /* border: 1px solid black   */
+        }
+        
+        #image2{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            border-spacing:20px ;
+            border-collapse: separate;
+            grid-template-columns: auto;
+            gap: 50px;
+            /* border: 1px solid black   */
+        }
+
+        #image3{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            border-spacing:20px ;
+            border-collapse: separate;
+            grid-template-columns: auto;
+            gap: 50px;
+            /* border: 1px solid black   */
+        }
+
+        #ima1{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: 300px;
+            padding: 10px;
+        }
+        p,h2{
+            margin-left: 20px;
+            margin-top: 20px;
+            margin-bottom: 0px;
+        }
+        h6,small{
+            margin-left: 20px;
+           margin-bottom: 10px;
+            border-radius: 20px;
+            
+        }
+        h6{
+            height: 20px;
+            width: 50px;
+            text-align: center;
+            background-color: green;
+
+        }
+        #ima2{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: -15px;
+            padding: 10px;
+        }
+        #ima3{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: -15px;
+            padding: 10px;
+        }
+
+        #ima4{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: -15px;
+            padding: 10px;
+        }
+
+        #ima5{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: -15px;
+            padding: 10px;
+        }
+
+        #ima6{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: 300px;
+            padding: 10px;
+        }
+
+        #ima7{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: -15px;
+            padding: 10px;
+        }
+
+        #ima8{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: -15px;
+            padding: 10px;
+        }
+
+        #ima9{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: -15px;
+            padding: 10px;
+        }
+
+        #ima10{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: -15px;
+            padding: 10px;
+        }
+
+        #ima11{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: 300px;
+            padding: 10px;
+        }
+
+        #ima12{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: -20px;
+            padding: 10px;
+        }
+
+        #ima13{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: -25px;
+            padding: 10px;
+        }
+
+        #ima14{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: -15px;
+            padding: 10px;
+        }
+
+        #ima15{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: -15px;
+            padding: 10px;
+        }
+
+        #views{
+            margin-top: 30px;
+        }
+        #offer{
+            margin-left: 90px;
+            margin-top:-35px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup">
+        <h1>Easy Shopping</h1> 
+        <input type="text" placeholder="search your products" style=" width: 400px;
+        height: 30px;
+        margin-left:100px;
+        margin-top: 30px;">
+        <a href="./myntra.html" style="margin-left: 400px;"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="" style="margin-left:40px;"><i class="fa-solid fa-magnifying-glass"></i>
+            profile</a>
+        <a href="" style="margin-left: 40px;"><i class="fa-solid fa-cart-shopping"></i>cart</a>
+        <a href="./sign.html" style="margin-left: 40px;"><i class="fa-solid fa-user-plus"></i>
+        signup</a>
+    </div>
+    <div id="parent">
+        <ul>
+            <a href="./Men.html">Men </a>
+            <a href="./Women.html">Women </a>
+            <a href="./kids.html">Kids </a>
+            <a href="./home.html">Home </a>
+            <a href="./westen.html">WestenWare </a>
+            <a href="./speaker.html">Speaker</a>
+            <a href="./jewellary.html">Jewellary </a>
+            <a href="./shoes.html">Footware </a>
+            <a href="./beauty.html">BeautyProduct</a>
+            <a href="./statunary.html">Statunarys </a>
+            <a href="./kitchen.html">kitchen</a>
+            <a href="./jeens.html">JeensAndTop  </a>
+            <a href="./function.html">FunctionWare </a>
+            <a href="./toys.html">Toys </a>
+            <a href="./bags.html">Bags </a>
+            
+        </ul>
+    </div>
+    <div id="image">
+        <div id="img1">
+        <img src="https://www.bing.com/th/id/OIP.mAB9hrZ75ikOJRyPPpFpxAHaE7?w=290&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="">
+        </div>
+        <div id="img2">
+        <img src="https://th.bing.com/th/id/OIP.oGrCa73IPEA9s-5ld63ShwHaE8?w=295&h=197&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="" width="380px" height="280px">
+        </div>
+        <div id="img3">
+        <img src="https://th.bing.com/th/id/OIP.QJFbMYl1nVnfw8abjrC6AgHaDu?w=346&h=176&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" width="380px" height="280px">
+        </div>
+        <div id="img4">
+        <img src="https://th.bing.com/th/id/OIP.zQ6gcM--Ikj7Hzx8DV7_JgHaDZ?w=339&h=160&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" width="370px" height="280px">
+        </div>
+    </div>
+    <div id="tab">
+        <h3>category</h3>
+            <input type="checkbox"><a href="./Men.html">Men </a> <br>
+            <input type="checkbox"><a href="./Women.html">Women </a> <br>
+            <input type="checkbox"><a href="./kids.html">Kids </a> <br>
+            <input type="checkbox"><a href="./home.html">Home </a> <br>
+            <input type="checkbox"><a href="./westen.html">WestenWare </a> <br>
+            <input type="checkbox"><a href="./electronic.html">Electronic </a> <br>
+            <input type="checkbox"><a href="./speaker.html">Speaker</a> <br>
+            <input type="checkbox"><a href="./jewellary.html">Jewellary </a> <br>
+            <input type="checkbox"><a href="./shoes.html">Footware </a> <br>
+            <input type="checkbox"><a href="./beauty.html">BeautyProduct</a> <br>
+            <input type="checkbox"><a href="./statunary.html">Statunarys </a> <br>
+            <input type="checkbox"><a href="./kitchen.html">kitchen</a> <br>
+            <input type="checkbox"><a href="./jeens.html">JeensAndTop</a> <br>
+            <input type="checkbox"><a href="./function.html">FunctionWare </a> <br>
+            <input type="checkbox"><a href="./toys.html">Toys </a> <br>
+            <input type="checkbox"><a href="./bags.html">Bags </a> <br>
+    </div>
+
+    <div id="image1">
+        <div id="ima1">
+            <img src="https://images.meesho.com/images/products/422034950/lxcpd_512.avif?width=360" alt="" width="190px" height="170px">
+           <p>Seven Seas Fine waterproof oil control</p>
+           <h2>$160</h2>
+           <div style="display: flex;">
+            <h3 id="offer">(50% offer)</h3>
+            </div>
+           <small>free Delivery</small>
+           <div style="display: flex;">
+           <h6>3.9</h6>
+           <small id="views">views(5,715)</small>
+           </div>
+        </div>
+
+        <div id="ima2">
+            <img src="https://images.meesho.com/images/products/183501431/eixra_512.avif?width=360" width="190px" height="170px" alt="">
+            <p>Ronziller Glass Glow Pre Makeup</p>
+           <h2>$142</h2>
+           <div style="display: flex;">
+            <h3 id="offer">(59% offer)</h3>
+            </div>
+           <small>free Delivery</small>
+           <div style="display: flex;">
+           <h6>4.0</h6> 
+           <small id="views">views(8,009)</small>
+           </div>
+        </div>
+
+        <div id="ima3">
+            <img src="https://images.meesho.com/images/products/274605372/iv5zc_512.avif?width=360" alt="" width="190px" height="170px">
+            <p>Sensational Stylish Eyeliner</p>
+           <h2>$90</h2>
+           <div style="display: flex;">
+            <h3 id="offer">(40% offer)</h3>
+            </div>
+           <small>free Delivery</small>
+           <div style="display: flex;">
+               <h6>4.0</h6> 
+               <small id="views">views(5,,364)</small>
+            </div>
+        </div>
+
+            <div id="ima4">
+                <img src="https://images.meesho.com/images/products/425154511/fz4ux_512.avif?width=360"  width="190px" height="170px">
+                <p>Hilary Rhoda Lashes Mascara</p>
+               <h2>$175</h2>
+               <div style="display: flex;">
+                <h3 id="offer">(24% offer)</h3>
+                </div>
+               <small>free Delivery</small>
+               <div style="display: flex;">
+                <h6>4.4</h6> 
+                <small id="views">views(2,817)</small>
+                </div>
+            </div>
+
+        <div id="ima5">
+            <img src="https://images.meesho.com/images/products/541141134/idiav_512.avif?width=360" alt=""width="200px" height="190px" >
+            <p>Nandiayan</p>
+           <h2>$223</h2>
+           <div style="display: flex;">
+            <h3 id="offer">(20% offer)</h3>
+            </div>
+           <small>free Delivery</small>
+           <div style="display: flex;">
+            <h6>4.1</h6> 
+            <small id="views">views(7,949)</small>
+            </div>
+        </div>
+    </div>
+    <div id="image2">
+        <div id="ima6">
+            <img src="https://images.meesho.com/images/products/458477799/0uyfq_512.avif?width=360" alt="" width="190px" height="170px">
+            <p>Waterproof Long lasting lipstick</p>
+            <h2>$125</h2>
+            <div style="display: flex;">
+                <h3 id="offer">(25% offer)</h3>
+            </div>
+            <small>free Delivery</small>
+            <div style="display: flex;">
+                <h6>4.1</h6> 
+                <small id="views">views(15,841)</small>
+            </div>
+        </div>
+
+        <div id="ima7">
+            <img src="https://images.meesho.com/images/products/396292612/l6zkk_512.avif?width=360" alt="" width="190px" height="190px">
+            <p>Useful Artifical Nails</p>
+            <h2>$139</h2>
+            <div style="display: flex;">
+                <h3 id="offer">(18% offer)</h3>
+            </div>
+            <small>free Delivery</small>
+            <div style="display: flex;">
+                <h6>4.3</h6> 
+                <small id="views">views(5,607)</small>
+            </div>
+        </div>
+
+        <div id="ima8">
+            <img src="https://images.meesho.com/images/products/509519806/brovz_512.avif?width=360" alt="" width="185px" height="170px">
+            <p>Shine Dazzling Glow Long Stable</p>
+            <h2>$150</h2>
+            <div style="display: flex;">
+                <h3 id="offer">(30% offer)</h3>
+            </div>
+            <small>free Delivery</small>
+            <div style="display: flex;">
+                <h6>4.0</h6> 
+                <small id="views">views(1,931)</small>
+            </div>
+        </div>
+
+        <div id="ima9">
+            <img src="https://images.meesho.com/images/products/153530801/j4a6g_512.avif?width=360" alt="" width="200px" height="190px">
+            <p>Elegent makeup brush</p>
+            <h2>$209</h2>
+            <div style="display: flex;">
+                <h3 id="offer">(27% offer)</h3>
+            </div>
+            <small>free Delivery</small>
+            <div style="display: flex;">
+                <h6>3.9</h6> 
+                <small id="views">views(4,763)</small>
+            </div>
+        </div>
+
+        <div id="ima10">
+            <img src="https://images.meesho.com/images/products/323659066/ts8jo_512.avif?width=360" alt="" width="200px" height="190px">
+            <p>Essential temporary Tatoos</p>
+            <h2>$110</h2>
+            <div style="display: flex;">
+                <h3 id="offer">(11% offer)</h3>
+            </div>
+            <small>free Delivery</small>
+            <div style="display: flex;">
+                <h6>3.7</h6> 
+                <small id="views">views(1,182)</small>
+            </div>
+        </div>
+    </div>
+    <div id="image3">
+        <div id="ima11">
+            <img src="https://images.meesho.com/images/products/384272391/i2jjr_512.avif?width=360" alt="" width="190px" height="190px">
+            <p>Classic hair Care combo</p>
+            <h2>$207</h2>
+            <div style="display: flex;">
+                <h3 id="offer">(34% offer)</h3>
+            </div>
+            <small>free Delivery</small>
+            <div style="display: flex;">
+                <h6>4.3</h6> 
+                <small id="views">views(1,206)</small>
+            </div>
+        </div>
+
+        <div id="ima12">
+            <img src="https://images.meesho.com/images/products/279682111/kuhpx_512.avif?width=360" alt="" width="190px" height="190px">
+            <p>New Face packs</p>
+            <h2>$79</h2>
+            <div style="display: flex;">
+                <h3 id="offer">(20% offer)</h3>
+            </div>
+            <small>free Delivery</small>
+            <div style="display: flex;">
+                <h6>3.8</h6> 
+                <small id="views">views(25,922)</small>
+            </div>
+        </div>
+
+        <div id="ima13">
+            <img src="https://images.meesho.com/images/products/540682843/x5nzc_512.avif?width=360" alt="" width="180px" height="190px">
+            <p>Premium Gentle toners</p>
+            <h2>$112</h2>
+            <div style="display: flex;">
+                <h3 id="offer">(30% offer)</h3>
+            </div>
+            <small>free Delivery</small>
+            <div style="display: flex;">
+                <h6>4.0</h6> 
+                <small id="views">views(2,098)</small>
+            </div>
+        </div>
+
+        <div id="ima14">
+            <img src="https://images.meesho.com/images/products/512812181/frquz_512.avif?width=360" alt="" width="190px" height="150px">
+            <p>All skin Type gel with Enriched Lavender Fragrance</p>
+            <h2>$231</h2>
+            <div style="display: flex;">
+                <h3 id="offer">(32% offer)</h3>
+            </div>
+            <small>free Delivery</small>
+            <div style="display: flex;">
+                <h6>4.2</h6> 
+                <small id="views">views(1,454)</small>
+            </div>
+        </div>
+
+        <div id="ima15">
+            <img src="https://images.meesho.com/images/products/342138578/6h1q0_512.avif?width=360" alt="" width="190px" height="170px">
+            <p>Classic Long Lasting body spray</p>
+            <h2>$233</h2>
+            <div style="display: flex;">
+                <h3 id="offer">(15% offer)</h3>
+            </div>
+            <small>free Delivery</small>
+            <div style="display: flex;">
+                <h6>4.2</h6> 
+                <small id="views">views(9,356)</small>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

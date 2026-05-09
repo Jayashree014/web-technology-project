@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./shooping.css">
+    <style>
+        .signup{
+    background-color: rgb(239, 228, 205);
+    display: flex;
+    /* position: fixed;  */
+    width: 100%;
+    height: 90px;
+}
+p{
+    margin-top: 10px;  
+}
+h1{
+    margin-left: 50px;
+}
+        #tab{
+            position:absolute;
+           margin-top: 4px;
+           width: 200px;
+           height: 380px;
+           margin-left: 20px;
+           border: 1px solid black;
+           background-color: antiquewhite;
+
+        }
+        a{
+            text-decoration: none;
+            line-height: -0.1;
+        }
+
+        #image1{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            border-spacing:20px ;
+            border-collapse: separate;
+            grid-template-columns: auto;
+            gap: 50px;
+            /* border: 1px solid black   */
+        }
+        
+        #image2{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            border-spacing:20px ;
+            border-collapse: separate;
+            grid-template-columns: auto;
+            gap: 50px;
+            /* border: 1px solid black   */
+        }
+
+        #image3{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            border-spacing:20px ;
+            border-collapse: separate;
+            grid-template-columns: auto;
+            gap: 50px;
+            /* border: 1px solid black   */
+        }
+
+        #ima1{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: 300px;
+            padding: 10px;
+        }
+        p,h2{
+             margin-left: 20px;
+            margin-top: 20px;
+            margin-bottom: 0px;}
+        h6,small{
+            margin-left: 20px;
+           margin-bottom: 10px;
+            border-radius: 20px;
+            
+        }
+        h6{
+            height: 20px;
+            width: 50px;
+            text-align: center;
+            background-color: green;
+
+        }
+        #ima2{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: -15px;
+            padding: 10px;
+        }
+        #ima3{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: -15px;
+            padding: 10px;
+        }
+
+        #ima4{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: -15px;
+            padding: 10px;
+        }
+
+        #ima5{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: -15px;
+            padding: 10px;
+        }
+
+        #ima6{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: 300px;
+            padding: 10px;
+        }
+
+        #ima7{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: -15px;
+            padding: 10px;
+        }
+
+        #ima8{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: -15px;
+            padding: 10px;
+        }
+
+        #ima9{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: -15px;
+            padding: 10px;
+        }
+
+        #ima10{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: -15px;
+            padding: 10px;
+        }
+
+        #ima11{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: 300px;
+            padding: 10px;
+        }
+
+        #ima12{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: -20px;
+            padding: 10px;
+        }
+
+        #ima13{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: -25px;
+            padding: 10px;
+        }
+
+        #ima14{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: -15px;
+            padding: 10px;
+        }
+
+        #ima15{
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-left: -15px;
+            padding: 10px;
+        }
+
+        #views{
+            margin-top: 30px;
+        }
+        #offer{
+            margin-left: 90px;
+            margin-top:-35px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup">
+        <h1>Easy Shopping</h1> 
+        <input type="text" placeholder="search your products" style=" width: 400px;
+        height: 30px;
+        margin-left:100px;
+        margin-top: 30px;">
+        <a href="./myntra.html" style="margin-left: 400px;"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="" style="margin-left:40px;"><i class="fa-solid fa-magnifying-glass"></i>
+            profile</a>
+        <a href="" style="margin-left: 40px;"><i class="fa-solid fa-cart-shopping"></i>cart</a>
+        <a href="./sign.html" style="margin-left: 40px;"><i class="fa-solid fa-user-plus"></i>
+        signup</a>
+    </div>
+    <div id="parent">
+        <ul>
+            <a href="./Men.html">Men </a>
+            <a href="./Women.html">Women </a>
+            <a href="./kids.html">Kids </a>
+            <a href="./home.html">Home </a>
+            <a href="./westen.html">WestenWare </a>
+            <a href="./speaker.html">Speaker</a>
+            <a href="./jewellary.html">Jewellary </a>
+            <a href="./shoes.html">Footware </a>
+            <a href="./beauty.html">BeautyProduct</a>
+            <a href="./statunary.html">Statunarys </a>
+            <a href="./kitchen.html">kitchen</a>
+            <a href="./jeens.html">JeensAndTop  </a>
+            <a href="./function.html">FunctionWare </a>
+            <a href="./toys.html">Toys </a>
+            <a href="./bags.html">Bags </a>
+            
+        </ul>
+    </div>
+    <div id="image">
+        <div id="img1">
+        <img src="https://www.bing.com/th/id/OIP.mAB9hrZ75ikOJRyPPpFpxAHaE7?w=290&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="">
+        </div>
+        <div id="img2">
+        <img src="https://th.bing.com/th/id/OIP.oGrCa73IPEA9s-5ld63ShwHaE8?w=295&h=197&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="" width="380px" height="280px">
+        </div>
+        <div id="img3">
+        <img src="https://th.bing.com/th/id/OIP.QJFbMYl1nVnfw8abjrC6AgHaDu?w=346&h=176&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" width="380px" height="280px">
+        </div>
+        <div id="img4">
+        <img src="https://th.bing.com/th/id/OIP.zQ6gcM--Ikj7Hzx8DV7_JgHaDZ?w=339&h=160&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" width="370px" height="280px">
+        </div>
+    </div>
+    <div id="tab">
+        <h3>category</h3>
+        <input type="checkbox"><a href="./Men.html">Men </a> <br>
+        <input type="checkbox"><a href="./Women.html">Women </a> <br>
+        <input type="checkbox"><a href="./kids.html">Kids </a> <br>
+        <input type="checkbox"><a href="./home.html">Home </a> <br>
+        <input type="checkbox"><a href="./westen.html">WestenWare </a> <br>
+        <input type="checkbox"><a href="./electronic.html">Electronic </a> <br>
+        <input type="checkbox"><a href="./speaker.html">Speaker</a> <br>
+        <input type="checkbox"><a href="./jewellary.html">Jewellary </a> <br>
+        <input type="checkbox"><a href="./shoes.html">Footware </a> <br>
+        <input type="checkbox"><a href="./beauty.html">BeautyProduct</a> <br>
+        <input type="checkbox"><a href="./statunary.html">Statunarys </a> <br>
+        <input type="checkbox"><a href="./kitchen.html">kitchen</a> <br>
+        <input type="checkbox"><a href="./jeens.html">JeensAndTop</a> <br>
+        <input type="checkbox"><a href="./function.html">FunctionWare </a> <br>
+        <input type="checkbox"><a href="./toys.html">Toys </a> <br>
+        <input type="checkbox"><a href="./bags.html">Bags </a> <br>
+    </div>
+
+    <div id="image1">
+        <div id="ima1">
+            <img src="https://images.meesho.com/images/products/177814713/mqcy0_512.avif?width=360" alt="" width="190px" height="170px">
+           <p>stylist partywear women top</p>
+           <h2>$278</h2>
+           <div style="display: flex;">
+            <h3 id="offer">(35% offer)</h3>
+            </div>
+           <small>free Delivery</small>
+           <div style="display: flex;">
+           <h6>3.7</h6>
+           <small id="views">views(5,239)</small>
+           </div>
+        </div>
+
+        <div id="ima2">
+            <img src="https://images.meesho.com/images/products/372937341/qy4yc_512.avif?width=360" width="190px" height="170px" alt="">
+            <p>fancy casual wear long black/white top</p>
+           <h2>$232</h2>
+           <div style="display: flex;">
+            <h3 id="offer">(10% offer)</h3>
+            </div>
+           <small>free Delivery</small>
+           <div style="display: flex;">
+           <h6>4.1</h6> 
+           <small id="views">views(7,836)</small>
+           </div>
+        </div>
+
+        <div id="ima3">
+            <img src="https://images.meesho.com/images/products/171058982/ch50x_512.avif?width=360" alt="" width="190px" height="170px">
+            <p>pretty fashionable wear dress for women</p>
+           <h2>$312</h2>
+           <div style="display: flex;">
+            <h3 id="offer">(30% offer)</h3>
+            </div>
+           <small>free Delivery</small>
+           <div style="display: flex;">
+               <h6>3.9</h6> 
+               <small id="views">views(2,713)</small>
+            </div>
+        </div>
+
+            <div id="ima4">
+                <img src="https://images.meesho.com/images/products/566022780/322cl_512.avif?width=360"  width="190px" height="170px">
+                <p>women wrinkle cursh palazzo pants</p>
+               <h2>$370</h2>
+               <div style="display: flex;">
+                <h3 id="offer">(15% offer)</h3>
+                </div>
+               <small>free Delivery</small>
+               <div style="display: flex;">
+                <h6>3.9</h6> 
+                <small id="views">views(3,876)</small>
+                </div>
+            </div>
+
+        <div id="ima5">
+            <img src="https://images.meesho.com/images/products/262209085/ts3rg_512.avif?width=360" alt=""width="200px" height="175px" >
+            <p>classic graceful wear for women </p>
+           <h2>$358</h2>
+           <div style="display: flex;">
+            <h3 id="offer">(35% offer)</h3>
+            </div>
+           <small>free Delivery</small>
+           <div style="display: flex;">
+            <h6>4.0</h6> 
+            <small id="views">views(19,129)</small>
+            </div>
+        </div>
+    </div>
+    <div id="image2">
+        <div id="ima6">
+            <img src="https://images.meesho.com/images/products/256725728/uh14i_512.avif?width=360" alt="" width="190px" height="170px">
+            <p>women's styling printed jumpsuit</p>
+            <h2>$352</h2>
+            <div style="display: flex;">
+                <h3 id="offer">(20% offer)</h3>
+            </div>
+            <small>free Delivery</small>
+            <div style="display: flex;">
+                <h6>4.3</h6> 
+                <small id="views">views(7,353)</small>
+            </div>
+        </div>
+
+        <div id="ima7">
+            <img src="https://images.meesho.com/images/products/406642430/wsxql_512.avif?width=360" alt="" width="190px" height="170px">
+            <p>lastest pants for girls women's</p>
+            <h2>$245</h2>
+            <div style="display: flex;">
+                <h3 id="offer">(18% offer)</h3>
+            </div>
+            <small>free Delivery</small>
+            <div style="display: flex;">
+                <h6>4.2</h6> 
+                <small id="views">views(18,902)</small>
+            </div>
+        </div>
+
+        <div id="ima8">
+            <img src="https://images.meesho.com/images/products/202017239/qgt6a_512.avif?width=512" alt="" width="185px" height="170px">
+            <p>Aakarsha refined feeding wear</p>
+            <h2>$292</h2>
+            <div style="display: flex;">
+                <h3 id="offer">(45% offer)</h3>
+            </div>
+            <small>free Delivery</small>
+            <div style="display: flex;">
+                <h6>3.7</h6> 
+                <small id="views">views(2,686)</small>
+            </div>
+        </div>
+
+        <div id="ima9">
+            <img src="https://images.meesho.com/images/products/387779184/xtzp6_512.avif?width=360" alt="" width="200px" height="170px">
+            <p>designer febulous jeans women's wear</p>
+            <h2>$526</h2>
+            <div style="display: flex;">
+                <h3 id="offer">(20% offer)</h3>
+            </div>
+            <small>free Delivery</small>
+            <div style="display: flex;">
+                <h6>4.2</h6> 
+                <small id="views">views(2,831)</small>
+            </div>
+        </div>
+
+        <div id="ima10">
+            <img src="https://images.meesho.com/images/products/382625265/pacha_512.avif?width=360" alt="" width="200px" height="190px">
+            <p></p>abhisarika superior kurtis
+            <h2>$314</h2>
+            <div style="display: flex;">
+                <h3 id="offer">(25% offer)</h3>
+            </div>
+            <small>free Delivery</small>
+            <div style="display: flex;">
+                <h6>4.1</h6> 
+                <small id="views">views(1,593)</small>
+            </div>
+        </div>
+    </div>
+    <div id="image3">
+        <div id="ima11">
+            <img src="https://images.meesho.com/images/products/440098414/fe0u0_512.avif?width=360" alt="" width="190px" height="190px">
+            <p>kashvi fashionable sarees</p>
+            <h2>$485</h2>
+            <div style="display: flex;">
+                <h3 id="offer">(20% offer)</h3>
+            </div>
+            <small>free Delivery</small>
+            <div style="display: flex;">
+                <h6>4.2</h6> 
+                <small id="views">views(1,482)</small>
+            </div>
+        </div>
+
+        <div id="ima12">
+            <img src="https://images.meesho.com/images/products/534225426/gj2uh_512.avif?width=360" alt="" width="190px" height="180px">
+            <p>kurthi with bottomwear</p>
+            <h2>$362</h2>
+            <div style="display: flex;">
+                <h3 id="offer">(30% offer)</h3>
+            </div>
+            <small>free Delivery</small>
+            <div style="display: flex;">
+                <h6>3.7</h6> 
+                <small id="views">views(2,640)</small>
+            </div>
+        </div>
+
+        <div id="ima13">
+            <img src="https://images.meesho.com/images/products/508270222/2w9p1_512.avif?width=512" alt="" width="180px" height="170px">
+            <p>new latest design printed dhoti kurta set</p>
+            <h2>$400</h2>
+            <div style="display: flex;">
+                <h3 id="offer">(38% offer)</h3>
+            </div>
+            <small>free Delivery</small>
+            <div style="display: flex;">
+                <h6>4.4</h6> 
+                <small id="views">views(2,552)</small>
+            </div>
+        </div>
+
+        <div id="ima14">
+            <img src="https://images.meesho.com/images/products/434415695/jkpcu_512.avif?width=360" alt="" width="190px" height="170px">
+            <p>leheriya sleeveless kurthi with plazzo set</p>
+            <h2>$319</h2>
+            <div style="display: flex;">
+                <h3 id="offer">(40% offer)</h3>
+            </div>
+            <small>free Delivery</small>
+            <div style="display: flex;">
+                <h6>4.1</h6> 
+                <small id="views">views(1,382)</small>
+            </div>
+        </div>
+
+        <div id="ima15">
+            <img src="https://images.meesho.com/images/products/250177676/tnhfp_512.avif?width=360" alt="" width="190px" height="170px">
+            <p>trendy graceful sahara set women's</p>
+            <h2>$359</h2>
+            <div style="display: flex;">
+                <h3 id="offer">(45% offer)</h3>
+            </div>
+            <small>free Delivery</small>
+            <div style="display: flex;">
+                <h6>3.8</h6> 
+                <small id="views">views(3,484)</small>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
